@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>imap-backup</Name>
+  <Repository>bymh/imap-backup</Repository>
+  <Registry>https://hub.docker.com/r/bymh/imap-backup/</Registry>
+  <GitHub>https://github.com/bymh/docker-imap-backup</GitHub>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/bymh/docker-imap-backup</Support>
+  <Overview>A container for simple usage of the ruby imap-backup tool.</Overview>
+  <Icon>https://raw.githubusercontent.com/bymh/unraid-docker-templates/master/bymh/img/imap-backup.png</Icon>
+  <Description>
+    A container for simple usage of the ruby imap-backup tool.[br][br]
+    Icon made by Pixel perfect (https://www.flaticon.com/authors/pixel-perfect) from Flaticon: https://www.flaticon.com/</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Config Name="Backup path" Target="/mail_data" Default="" Mode="rw" Description="Container Path: /mail_data" Type="Path" Display="always" Required="true" Mask="false" />
+  <Config Name="Server" Target="IMAP_SERVER" Default="" Mode="" Description="Container Variable: IMAP_SERVER" Type="Variable" Display="always" Required="true" Mask="false" />
+  <Config Name="Username" Target="IMAP_USER" Default="" Mode="" Description="Container Variable: IMAP_USER" Type="Variable" Display="always" Required="true" Mask="false" />
+  <Config Name="Password" Target="IMAP_PASSWORD" Default="" Mode="" Description="Container Variable: IMAP_PASSWORD" Type="Variable" Display="always" Required="true" Mask="false" />
+</Container>
